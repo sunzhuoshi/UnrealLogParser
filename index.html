@@ -11,7 +11,7 @@
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
             color: #333;
@@ -21,7 +21,7 @@
             flex-direction: column;
             align-items: center;
         }
-        
+
         .container {
             width: 100%;
             max-width: 1400px;
@@ -31,43 +31,43 @@
             overflow: hidden;
             margin: 20px 0;
         }
-        
+
         header {
             background: #1a2a6c;
             color: white;
             padding: 20px;
             text-align: center;
         }
-        
+
         h1 {
             font-size: 2.2rem;
             margin-bottom: 10px;
         }
-        
+
         .subtitle {
             font-size: 1.1rem;
             opacity: 0.8;
         }
-        
+
         .content {
             display: flex;
             flex-wrap: wrap;
             padding: 20px;
         }
-        
+
         .upload-section {
             flex: 1;
             min-width: 300px;
             padding: 20px;
         }
-        
+
         .result-section {
             flex: 3;
             min-width: 300px;
             padding: 20px;
             border-left: 1px solid #eee;
         }
-        
+
         .drop-area {
             border: 3px dashed #1a2a6c;
             border-radius: 10px;
@@ -77,23 +77,23 @@
             background: #f8f9fa;
             cursor: pointer;
         }
-        
+
         .drop-area:hover, .drop-area.dragover {
             background: #e9ecef;
             border-color: #fdbb2d;
         }
-        
+
         .drop-area i {
             font-size: 3rem;
             color: #1a2a6c;
             margin-bottom: 15px;
             display: block;
         }
-        
+
         .file-input {
             display: none;
         }
-        
+
         .btn {
             background: #1a2a6c;
             color: white;
@@ -105,47 +105,47 @@
             margin-top: 15px;
             transition: background 0.3s;
         }
-        
+
         .btn:hover {
             background: #253a8c;
         }
-        
+
         .btn-filter {
             background: #b21f1f;
             padding: 8px 15px;
             font-size: 0.9rem;
         }
-        
+
         .btn-filter:hover {
             background: #c42f2f;
         }
-        
+
         .btn:disabled {
             background: #cccccc;
             cursor: not-allowed;
         }
-        
+
         .btn-cancel {
             background: #6c757d;
         }
-        
+
         .btn-cancel:hover {
             background: #5a6268;
         }
-        
+
         .result-box {
             background: #f8f9fa;
             border-radius: 10px;
             padding: 20px;
             margin-top: 20px;
         }
-        
+
         .basic-info {
             display: flex;
             gap: 15px;
             margin-bottom: 20px;
         }
-        
+
         .basic-info-item {
             flex: 1;
             min-width: 200px;
@@ -154,7 +154,7 @@
             padding: 15px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .info-title {
             font-weight: bold;
             color: #1a2a6c;
@@ -163,13 +163,13 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
+
         .info-value {
             font-size: 1.1rem;
             color: #b21f1f;
             word-break: break-all;
         }
-        
+
         .file-content-container {
             background: #2c3e50;
             border-radius: 5px;
@@ -178,7 +178,7 @@
             overflow: auto;
             position: relative;
         }
-        
+
         .file-content {
             color: #ecf0f1;
             font-family: monospace;
@@ -186,12 +186,12 @@
             font-size: 0.9rem;
             line-height: 1.4;
         }
-        
+
         .virtual-scroll-content {
             position: relative;
             width: 100%;
         }
-        
+
         .progress-bar {
             height: 8px;
             background: #ddd;
@@ -200,14 +200,14 @@
             overflow: hidden;
             display: none;
         }
-        
+
         .progress {
             height: 100%;
             background: linear-gradient(90deg, #1a2a6c, #fdbb2d);
             width: 0%;
             transition: width 0.3s;
         }
-        
+
         footer {
             text-align: center;
             padding: 20px;
@@ -215,13 +215,13 @@
             font-size: 0.9rem;
             opacity: 0.8;
         }
-        
+
         .system-info {
             display: flex;
             gap: 15px;
             margin-top: 15px;
         }
-        
+
         .system-info-item {
             flex: 1;
             min-width: 200px;
@@ -230,20 +230,20 @@
             padding: 15px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .section-title {
             margin: 25px 0 15px 0;
             padding-bottom: 10px;
             border-bottom: 2px solid #1a2a6c;
             color: #1a2a6c;
         }
-        
+
         .rhi-info {
             display: flex;
             gap: 15px;
             margin-top: 15px;
         }
-        
+
         .rhi-info-item {
             flex: 1;
             min-width: 200px;
@@ -252,13 +252,13 @@
             padding: 15px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .xess-plugin-info {
             display: flex;
             gap: 15px;
             margin-top: 15px;
         }
-        
+
         .xess-plugin-item {
             flex: 1;
             min-width: 100px;
@@ -267,7 +267,7 @@
             padding: 15px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .filter-controls {
             background: white;
             border-radius: 8px;
@@ -275,7 +275,7 @@
             margin-top: 15px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .filter-row {
             display: flex;
             flex-wrap: wrap;
@@ -283,7 +283,7 @@
             align-items: center;
             margin-bottom: 10px;
         }
-        
+
         .filter-input {
             flex: 1;
             min-width: 200px;
@@ -292,26 +292,26 @@
             border-radius: 4px;
             font-size: 0.9rem;
         }
-        
+
         .filter-options {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
-        
+
         .filter-option {
             display: flex;
             align-items: center;
             gap: 5px;
             font-size: 0.9rem;
         }
-        
+
         .filter-stats {
             margin-top: 10px;
             font-size: 0.9rem;
             color: #1a2a6c;
         }
-        
+
         .status-indicator {
             display: inline-block;
             padding: 3px 8px;
@@ -320,7 +320,7 @@
             margin-left: 10px;
             font-size: 0.8rem;
         }
-        
+
         .loading {
             display: inline-block;
             width: 16px;
@@ -332,12 +332,12 @@
             margin-right: 8px;
             vertical-align: middle;
         }
-        
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
+
         .performance-warning {
             background: #fff3cd;
             color: #856404;
@@ -347,47 +347,47 @@
             font-size: 0.9rem;
             display: none;
         }
-        
+
         .performance-options {
             margin-top: 10px;
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
-        
+
         .performance-option {
             display: flex;
             align-items: center;
             gap: 5px;
             font-size: 0.9rem;
         }
-        
+
         .cancel-button {
             display: none;
             margin-left: 10px;
         }
-        
+
         @media (max-width: 768px) {
             .content {
                 flex-direction: column;
             }
-            
+
             .result-section {
                 border-left: none;
                 border-top: 1px solid #eee;
                 margin-top: 20px;
                 padding-top: 30px;
             }
-            
+
             .basic-info, .rhi-info, .xess-plugin-info {
                 grid-template-columns: 1fr;
             }
-            
+
             .filter-row {
                 flex-direction: column;
                 align-items: stretch;
             }
-            
+
             .xess-plugin-item {
                 min-width: 100%;
             }
@@ -400,23 +400,23 @@
             <h1>Unreal Log Parser - Local Edition</h1>
             <p class="subtitle">Parse information used to triage issues from Unreal log files, local browser parsing, no server upload required</p>
         </header>
-        
+
         <div class="content">
             <div class="upload-section">
                 <h2>Upload File</h2>
                 <p>Select or drag and drop a Unreal log file</p>
-                
+
                 <div class="drop-area" id="dropZone">
                     <i>📁</i>
                     <p>Drag and drop file here or click to select</p>
                     <button class="btn">Select File</button>
                     <input type="file" id="fileInput" class="file-input" accept=".txt,.log">
                 </div>
-                
+
                 <div class="progress-bar" id="progressBar">
                     <div class="progress" id="progress"></div>
                 </div>
-                
+
                 <div class="performance-warning" id="performanceWarning">
                     <strong>Large file detected:</strong> For optimal performance, filtering and display have been optimized.
                     Only visible lines are rendered.
@@ -432,11 +432,11 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="result-section">
                 <h2>Parse Results</h2>
                 <p>Engine and system information extracted from the file</p>
-                
+
                 <div class="result-box">
                     <h3 class="section-title">Basic Information</h3>
                     <div class="basic-info">
@@ -449,54 +449,54 @@
                             <div class="info-title">Build Configuration</div>
                             <div class="info-value" id="buildConfigurationResult">Not parsed</div>
                         </div>
-                        
+
                         <div class="basic-info-item">
                             <div class="info-title">Unreal Engine Version</div>
                             <div class="info-value" id="versionResult">Not parsed</div>
                         </div>
-                        
+
                         <div class="basic-info-item">
                             <div class="info-title">Compatible Engine Version</div>
                             <div class="info-value" id="compatibleVersionResult">Not parsed</div>
                         </div>
                     </div>
-                    
+
                     <h3 class="section-title">System Information</h3>
                     <div class="system-info">
                         <div class="system-info-item">
                             <div class="info-title">Operating System</div>
                             <div class="info-value" id="osResult">Not parsed</div>
                         </div>
-                        
+
                         <div class="system-info-item">
                             <div class="info-title">CPU</div>
                             <div class="info-value" id="cpuResult">Not parsed</div>
                         </div>
-                        
+
                         <div class="system-info-item">
                             <div class="info-title">GPU</div>
                             <div class="info-value" id="gpuResult">Not parsed</div>
                         </div>
                     </div>
-                    
+
                     <h3 class="section-title">RHI (Rendering Hardware Interface) Information</h3>
                     <div class="rhi-info">
                         <div class="rhi-info-item">
                             <div class="info-title">Graphics Card Name</div>
                             <div class="info-value" id="gpuNameResult">Not parsed</div>
                         </div>
-                        
+
                         <div class="rhi-info-item">
                             <div class="info-title">Driver Version</div>
                             <div class="info-value" id="driverVersionResult">Not parsed</div>
                         </div>
-                        
+
                         <div class="rhi-info-item">
                             <div class="info-title">Driver Date</div>
                             <div class="info-value" id="driverDateResult">Not parsed</div>
                         </div>
                     </div>
-                    
+
                     <h3 class="section-title">XeSS Plugin Information</h3>
                     <div class="xess-plugin-info">
                         <div class="xess-plugin-item">
@@ -516,9 +516,9 @@
                             <div class="info-value" id="xefgSDKVersion">Not found</div>
                         </div>
                     </div>
-                    
+
                     <h3 class="section-title">File Content Preview</h3>
-                    
+
                     <div class="filter-controls">
                         <div class="filter-row">
                             <input type="text" id="filterInput" class="filter-input" placeholder="Filter pattern (e.g. *LogXe*)" value="*LogXe*">
@@ -548,7 +548,7 @@
                             Showing all lines
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <div class="file-content-container" id="fileContainer">
                             <div class="file-content" id="contentPreview">File content will be displayed here...</div>
@@ -558,7 +558,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer>
         <p>Unreal Log Parser - Local Edition &copy; 2025 - Local browser parsing, no server upload required</p>
     </footer>
@@ -594,13 +594,13 @@
             const performanceWarning = document.getElementById('performanceWarning');
             const fastFiltering = document.getElementById('fastFiltering');
             const limitResults = document.getElementById('limitResults');
-            
+
             // Xe Technologies elements
             const xessPluginVersionName = document.getElementById('xessPluginVersionName');
             const xessSDKVersion = document.getElementById('xessSDKVersion');
             const xellSDKVersion = document.getElementById('xellSDKVersion');
             const xefgSDKVersion = document.getElementById('xefgSDKVersion');
-            
+
             // Store original file content for filtering
             let originalContent = '';
             let originalLines = [];
@@ -612,61 +612,61 @@
             let filteringInProgress = false;
             let cancelRequested = false;
             let debounceTimer = null;
-            
+
             // Initialize virtual scroll
             function initVirtualScroll() {
                 fileContainer.addEventListener('scroll', handleScroll);
                 visibleLineCount = Math.ceil(fileContainer.clientHeight / lineHeight) + 5;
             }
-            
+
             // Handle scroll event for virtual rendering
             function handleScroll() {
                 if (!largeFileMode || filteredLines.length <= visibleLineCount) return;
-                
+
                 if (renderTimeout) clearTimeout(renderTimeout);
                 renderTimeout = setTimeout(renderVisibleLines, 50);
             }
-            
+
             // Render only visible lines for large files
             function renderVisibleLines() {
                 const scrollTop = fileContainer.scrollTop;
                 const startIdx = Math.max(0, Math.floor(scrollTop / lineHeight) - 5);
                 const endIdx = Math.min(filteredLines.length, startIdx + visibleLineCount + 10);
-                
+
                 const visibleContent = filteredLines.slice(startIdx, endIdx).join('\n');
-                
+
                 // Set the content with a top padding to maintain scroll position
                 contentPreview.textContent = visibleContent;
                 contentPreview.style.paddingTop = (startIdx * lineHeight) + 'px';
                 contentPreview.style.height = (filteredLines.length * lineHeight) + 'px';
             }
-            
+
             // Trigger file selection when drop zone is clicked
             dropZone.addEventListener('click', () => {
                 fileInput.click();
             });
-            
+
             // Process file when file input changes
             fileInput.addEventListener('change', function(e) {
                 if (this.files && this.files.length > 0) {
                     processFile(this.files[0]);
                 }
             });
-            
+
             // Handle drag and drop events
             dropZone.addEventListener('dragover', function(e) {
                 e.preventDefault();
                 dropZone.classList.add('dragover');
             });
-            
+
             dropZone.addEventListener('dragleave', function() {
                 dropZone.classList.remove('dragover');
             });
-            
+
             dropZone.addEventListener('drop', function(e) {
                 e.preventDefault();
                 dropZone.classList.remove('dragover');
-                
+
                 if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
                     processFile(e.dataTransfer.files[0]);
                 }
@@ -674,7 +674,7 @@
 
             // Apply filter when button is clicked
             applyFilter.addEventListener('click', applyContentFilter);
-            
+
             // Cancel filtering when button is clicked
             cancelFilter.addEventListener('click', function() {
                 cancelRequested = true;
@@ -683,7 +683,7 @@
                 applyFilter.disabled = false;
                 filterStats.textContent = 'Filtering cancelled';
             });
-            
+
             // Clear filter when button is clicked
             clearFilter.addEventListener('click', function() {
                 filterInput.value = '';
@@ -692,22 +692,22 @@
                 showWarnings.checked = false;
                 applyContentFilter();
             });
-            
+
             // Apply filter when filter options change
             caseSensitive.addEventListener('change', function() {
                 if (realTimeFilter.checked) applyContentFilterDebounced();
             });
-            
+
             showErrors.addEventListener('change', function() {
                 if (this.checked) showWarnings.checked = false;
                 if (realTimeFilter.checked) applyContentFilterDebounced();
             });
-            
+
             showWarnings.addEventListener('change', function() {
                 if (this.checked) showErrors.checked = false;
                 if (realTimeFilter.checked) applyContentFilterDebounced();
             });
-            
+
             realTimeFilter.addEventListener('change', function() {
                 if (this.checked) {
                     filterInput.addEventListener('input', applyContentFilterDebounced);
@@ -715,7 +715,7 @@
                     filterInput.removeEventListener('input', applyContentFilterDebounced);
                 }
             });
-            
+
             // Debounced filter application for real-time filtering
             function applyContentFilterDebounced() {
                 if (debounceTimer) clearTimeout(debounceTimer);
@@ -729,17 +729,17 @@
                     alert('Please select a text file (.txt or .log)');
                     return;
                 }
-                
+
                 // Reset state
                 cancelRequested = false;
                 filteringInProgress = false;
-                
+
                 // Show progress bar
                 progressBar.style.display = 'block';
                 progress.style.width = '0%';
-                
+
                 const reader = new FileReader();
-                
+
                 // Handle progress events
                 reader.onprogress = function(e) {
                     if (e.lengthComputable) {
@@ -747,15 +747,15 @@
                         progress.style.width = percentLoaded + '%';
                     }
                 };
-                
+
                 // Handle file load completion
                 reader.onload = function(e) {
                     originalContent = e.target.result;
                     originalLines = originalContent.split('\n');
-                    
+
                     // Check if file is large
                     largeFileMode = originalLines.length > 5000;
-                    
+
                     if (largeFileMode) {
                         performanceWarning.style.display = 'block';
                         initVirtualScroll();
@@ -766,44 +766,44 @@
                         contentPreview.textContent = originalContent;
                         filteredLines = originalLines;
                     }
-                    
+
                     parseUnrealInfo(originalContent);
-                    
+
                     // Reset filter options
                     filterInput.value = '*LogXe*';
                     caseSensitive.checked = false;
                     showErrors.checked = false;
                     showWarnings.checked = false;
                     filterStats.textContent = `Showing all ${originalLines.length} lines`;
-                    
+
                     // Hide progress bar after a short delay
                     setTimeout(() => {
                         progressBar.style.display = 'none';
                     }, 500);
                 };
-                
+
                 // Handle file read errors
                 reader.onerror = function() {
                     alert('Error reading file');
                     progressBar.style.display = 'none';
                 };
-                
+
                 // Start reading the file
                 reader.readAsText(file);
             }
-            
+
             // Apply filter to content
             function applyContentFilter() {
                 if (!originalContent || filteringInProgress) return;
-                
+
                 cancelRequested = false;
                 filteringInProgress = true;
                 applyFilter.disabled = true;
                 cancelFilter.style.display = 'inline-block';
-                
+
                 // Show loading state
                 filterStats.innerHTML = '<span class="loading"></span> Filtering...';
-                
+
                 // Use setTimeout to allow UI to update before heavy processing
                 setTimeout(() => {
                     let pattern = filterInput.value;
@@ -812,20 +812,20 @@
                     const showOnlyWarnings = showWarnings.checked;
                     const useFastFiltering = fastFiltering.checked;
                     const shouldLimitResults = limitResults.checked;
-                    
+
                     // Start incremental filtering
                     incrementalFilter(
-                        originalLines, 
-                        pattern, 
-                        isCaseSensitive, 
-                        showOnlyErrors, 
+                        originalLines,
+                        pattern,
+                        isCaseSensitive,
+                        showOnlyErrors,
                         showOnlyWarnings,
                         useFastFiltering,
                         shouldLimitResults
                     );
                 }, 50);
             }
-            
+
             // Incremental filtering with progress updates
             function incrementalFilter(lines, pattern, isCaseSensitive, showOnlyErrors, showOnlyWarnings, useFastFiltering, shouldLimitResults) {
                 const totalLines = lines.length;
@@ -835,14 +835,14 @@
                 let processed = 0;
                 let hasMore = true;
                 let maxResults = shouldLimitResults ? 10000 : Number.MAX_SAFE_INTEGER;
-                
+
                 // Convert pattern to regex if provided
                 let regex = null;
                 if (pattern) {
                     let regexPattern = pattern.replace(/([.+?^${}()|[\]\\])/g, '\\$1').replace(/\*/g, '.*');
                     regex = isCaseSensitive ? new RegExp(regexPattern) : new RegExp(regexPattern, 'i');
                 }
-                
+
                 // Process next batch
                 function processNextBatch() {
                     if (cancelRequested) {
@@ -851,15 +851,15 @@
                         cancelFilter.style.display = 'none';
                         return;
                     }
-                    
+
                     const batchEnd = Math.min(processed + batchSize, totalLines);
                     const timeElapsed = performance.now() - startTime;
-                    
+
                     // Check if we should yield to UI to prevent freezing
                     if (timeElapsed > 50 && processed > 0) {
                         // Update UI with partial results
                         updateFilteredResults(filtered, processed, totalLines);
-                        
+
                         // Schedule next batch
                         setTimeout(processNextBatch, 10);
                     } else {
@@ -869,22 +869,22 @@
                                 hasMore = false;
                                 break;
                             }
-                            
+
                             const line = lines[i];
-                            
+
                             // Skip if error filter is on and line doesn't contain error
                             if (showOnlyErrors && !isErrorLine(line, useFastFiltering)) continue;
-                            
+
                             // Skip if warning filter is on and line doesn't contain warning
                             if (showOnlyWarnings && !isWarningLine(line, useFastFiltering)) continue;
                                             // Skip if pattern doesn't match
                             if (regex && !regex.test(line)) continue;
-                            
+
                             filtered.push(line);
                         }
-                        
+
                         processed = batchEnd;
-                        
+
                         // Check if we're done
                         if (processed >= totalLines || !hasMore) {
                             filteringInProgress = false;
@@ -904,11 +904,11 @@
                         }
                     }
                 }
-                
+
                 // Start processing
                 processNextBatch();
             }
-            
+
             // Calculate appropriate batch size based on total lines
             function calculateBatchSize(totalLines) {
                 if (totalLines <= 1000) return 100;
@@ -917,17 +917,17 @@
                 if (totalLines <= 100000) return 2000;
                 return 5000;
             }
-            
+
             // Update UI with filtered results
             function updateFilteredResults(filtered, processed, totalLines) {
                 filteredLines = filtered;
-                
+
                 if (largeFileMode) {
                     renderVisibleLines();
                 } else {
                     contentPreview.textContent = filtered.join('\n');
                 }
-                
+
                 // Update filter stats
                 const percentComplete = Math.round((processed / totalLines) * 100);
                 if (processed < totalLines) {
@@ -936,31 +936,31 @@
                     filterStats.textContent = `Showing ${filtered.length} of ${totalLines} lines`;
                 }
             }
-            
+
             // Check if line contains error information
             function isErrorLine(line, fast) {
                 if (fast) {
                     return line.includes('Error') || line.includes('error');
                 }
-                return line.includes('Error') || 
-                       line.includes('error') || 
-                       line.match(/.*\bError\b.*/i) || 
+                return line.includes('Error') ||
+                       line.includes('error') ||
+                       line.match(/.*\bError\b.*/i) ||
                        line.match(/.*\bException\b.*/i) ||
                        line.match(/.*\bFailed\b.*/i) ||
                        line.match(/.*\bCrash\b.*/i);
             }
-            
+
             // Check if line contains warning information
             function isWarningLine(line, fast) {
                 if (fast) {
                     return line.includes('Warning') || line.includes('warning');
                 }
-                return line.includes('Warning') || 
-                       line.includes('warning') || 
+                return line.includes('Warning') ||
+                       line.includes('warning') ||
                        line.match(/.*\bWarning\b.*/i) ||
                        line.match(/.*\bNotice\b.*/i);
             }
-            
+
             // Parse Unreal Engine information from text
             function parseUnrealInfo(text) {
                 // Parse executable name
@@ -983,86 +983,86 @@
                 if (versionMatch && versionMatch[1]) {
                     version = versionMatch[1];
                 }
-                
+
                 // Parse compatible engine version
                 let compatibleVersion = 'Not found';
                 const compatibleVersionMatch = text.match(/Compatible Engine Version:\s*([\d.]+-\d+\+UE\d+)/i);
                 if (compatibleVersionMatch && compatibleVersionMatch[1]) {
                     compatibleVersion = compatibleVersionMatch[1];
                 }
-                
+
                 // Parse OS information
                 let os = 'Not found';
                 const osMatch = text.match(/OS:\s*([^,]+)/i);
                 if (osMatch && osMatch[1]) {
                     os = osMatch[1].trim();
                 }
-                
+
                 // Parse CPU information
                 let cpu = 'Not found';
                 const cpuMatch = text.match(/CPU:\s*([^,]+)/i);
                 if (cpuMatch && cpuMatch[1]) {
                     cpu = cpuMatch[1].trim();
                 }
-                
+
                 // Parse GPU information
                 let gpu = 'Not found';
                 const gpuMatch = text.match(/GPU:\s*([^\n\r]+)/i);
                 if (gpuMatch && gpuMatch[1]) {
                     gpu = gpuMatch[1].trim();
                 }
-                
+
                 // Parse RHI information - Graphics card name
                 let gpuName = 'Not found';
                 const gpuNameMatch = text.match(/RHI Adapter Info:\s*\n.*Name:\s*(.+)/m);
                 if (gpuNameMatch && gpuNameMatch[1]) {
                     gpuName = gpuNameMatch[1].trim();
                 }
-                
+
                 // Parse RHI information - Driver version
                 let driverVersion = 'Not found';
                 const driverVersionMatch = text.match(/Driver Version:\s*([^\n\r]+)/i);
                 if (driverVersionMatch && driverVersionMatch[1]) {
                     driverVersion = driverVersionMatch[1].trim();
                 }
-                
+
                 // Parse RHI information - Driver date
                 let driverDate = 'Not found';
                 const driverDateMatch = text.match(/Driver Date:\s*([^\n\r]+)/i);
                 if (driverDateMatch && driverDateMatch[1]) {
                     driverDate = driverDateMatch[1].trim();
                 }
-                
+
                 // Parse XeSS information
                 let xessPluginVerName = 'Not found';
                 let xessSDKVer = 'Not found';
                 let xellSDKVer = 'Not found';
                 let xefgSDKVer = 'Not found';
-                
+
                 // Parse XeSS plugin version name
                 const xessModuleMatch = text.match(/LogXeSSModule:.*version name: ([\d.]+)/);
                 if (xessModuleMatch) {
                     xessPluginVerName = xessModuleMatch[1];
                 }
-                
+
                 // Parse XeSS SDK version
                 const xessRHIMatch = text.match(/LogXeSSRHI:.*XeSS library ([\d.]+)/);
                 if (xessRHIMatch) {
                     xessSDKVer = xessRHIMatch[1];
                 }
-                
+
                 // Parse XeLL SDK version
                 const xellModuleMatch = text.match(/LogXeLLModule:.*XeLL SDK ([\d.]+)/);
                 if (xellModuleMatch) {
                     xellSDKVer = xellModuleMatch[1];
                 }
-                
+
                 // Parse XeFG SDK version
                 const xefgModuleMatch = text.match(/LogXeFGRHIModule:.*XeFG SDK ([\d.]+)/);
                 if (xefgModuleMatch) {
                     xefgSDKVer = xefgModuleMatch[1];
                 }
-                
+
                 // Update UI with parsed results
                 executableResult.textContent = executable;
                 buildConfigurationResult.textContent = buildConfig;
@@ -1074,25 +1074,25 @@
                 gpuNameResult.textContent = gpuName;
                 driverVersionResult.textContent = driverVersion;
                 driverDateResult.textContent = driverDate;
-                
+
                 // Update Xe technologies information
                 xessPluginVersionName.textContent = xessPluginVerName;
                 xessSDKVersion.textContent = xessSDKVer;
                 xellSDKVersion.textContent = xellSDKVer;
                 xefgSDKVersion.textContent = xefgSDKVer;
-                
+
                 // Add visual styling to results
                 const infoValues = document.querySelectorAll('.info-value');
                 infoValues.forEach(el => {
                     el.style.color = '#1a2a6c';
                     el.style.transition = 'all 0.5s';
                 });
-                
+
                 // Add animation effect to results
                 setTimeout(() => {
                     infoValues.forEach(el => {
                         el.style.transform = 'scale(1.05)';
-                        
+
                         setTimeout(() => {
                             el.style.transform = 'scale(1)';
                         }, 500);
