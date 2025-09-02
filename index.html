@@ -170,6 +170,21 @@
             word-break: break-all;
         }
 
+        .build-config-development {
+            color: default;
+            font-weight: default
+        }
+
+        .build-config-test {
+            color: #ffc107!important;
+            font-weight: bold;
+        }
+
+        .build-config-shipping {
+            color: #dc3545!important;
+            font-weight: bold;
+        }
+
         .file-content-container {
             background: #2c3e50;
             border-radius: 5px;
@@ -1066,6 +1081,20 @@
                 // Update UI with parsed results
                 executableResult.textContent = executable;
                 buildConfigurationResult.textContent = buildConfig;
+                // Highlight build configuration
+                {
+                    let buildConfigLower = buildConfig.toLowerCase();
+                    buildConfigurationResult.classList.remove('build-config-dev', 'build-config-test', 'build-config-shipping');
+                    switch (buildConfigLower) {
+                        case 'development':
+                        case 'test':
+                        case 'shipping':
+                            buildConfigurationResult.classList.add('build-config-' + buildConfigLower);
+                            break;
+                        default:
+                            break;
+                    }
+                }
                 versionResult.textContent = version;
                 compatibleVersionResult.textContent = compatibleVersion;
                 osResult.textContent = os;
