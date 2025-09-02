@@ -1104,14 +1104,14 @@
 
                 // Parse Unreal Engine version
                 let version = 'Not found';
-                const versionMatch = text.match(/Engine Version:\s*([\d.]+-\d+\+UE\d+)/i);
+                const versionMatch = text.match(/Engine Version:\s*([\d.]+-\d+\++UE.*)/i);
                 if (versionMatch && versionMatch[1]) {
                     version = versionMatch[1];
                 }
 
                 // Parse compatible engine version
                 let compatibleVersion = 'Not found';
-                const compatibleVersionMatch = text.match(/Compatible Engine Version:\s*([\d.]+-\d+\+UE\d+)/i);
+                const compatibleVersionMatch = text.match(/Compatible Engine Version:\s*([\d.]+-\d+\++UE.*)/i);
                 if (compatibleVersionMatch && compatibleVersionMatch[1]) {
                     compatibleVersion = compatibleVersionMatch[1];
                 }
