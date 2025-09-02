@@ -516,7 +516,7 @@
                     
                     <div class="filter-controls">
                         <div class="filter-row">
-                            <input type="text" id="filterInput" class="filter-input" placeholder="Filter pattern (e.g. *LogXe*)">
+                            <input type="text" id="filterInput" class="filter-input" placeholder="Filter pattern (e.g. *LogXe*)" value="*LogXe*">
                             <button class="btn btn-filter" id="applyFilter">Apply Filter</button>
                             <button class="btn btn-filter btn-cancel" id="cancelFilter" style="display:none;">Cancel</button>
                             <button class="btn btn-filter" id="clearFilter">Clear Filter</button>
@@ -765,7 +765,7 @@
                     parseUnrealInfo(originalContent);
                     
                     // Reset filter options
-                    filterInput.value = '';
+                    filterInput.value = '*LogXe*';
                     caseSensitive.checked = false;
                     showErrors.checked = false;
                     showWarnings.checked = false;
