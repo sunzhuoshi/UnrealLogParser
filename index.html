@@ -1138,8 +1138,16 @@
                 }
 
                 // Parse RHI information - Graphics card name
+                // Try UE5 log format first: "RHI Adapter Info:" followed by "Name:"
                 let gpuName = 'Not found';
-                const gpuNameMatch = text.match(/RHI Adapter Info:\s*\n.*Name:\s*(.+)/m);
+                let gpuNameMatch = text.match(/RHI Adapter Info:\s*\n.*Name:\s*(.+)/m);
+
+                // If not found, try UE4 log format: "Adapter Name:"
+                if (!gpuNameMatch) {
+                    gpuNameMatch = text.match(/Adapter Name:\s*(.+)/);
+                }
+
+                // If a match is found, extract and trim the GPU name
                 if (gpuNameMatch && gpuNameMatch[1]) {
                     gpuName = gpuNameMatch[1].trim();
                 }
