@@ -385,26 +385,66 @@
         @media (max-width: 768px) {
             .content {
                 flex-direction: column;
+                padding: 10px;
+            }
+
+            .upload-section, .result-section {
+                padding: 10px;
             }
 
             .result-section {
                 border-left: none;
                 border-top: 1px solid #eee;
                 margin-top: 20px;
-                padding-top: 30px;
+                padding-top: 20px;
             }
 
-            .basic-info, .rhi-info, .xess-plugin-info {
-                grid-template-columns: 1fr;
+            .basic-info, .system-info, .rhi-info, .xess-plugin-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .basic-info-item, .system-info-item, .rhi-info-item, .xess-plugin-item {
+                min-width: 100%;
+                padding: 10px;
             }
 
             .filter-row {
                 flex-direction: column;
                 align-items: stretch;
+                gap: 8px;
+            }
+
+            .filter-input {
+                min-width: 100px;
+                width: 100%;
+            }
+
+            .file-content-container {
+                max-height: 150px;
+                font-size: 0.85rem;
             }
 
             .xess-plugin-item {
                 min-width: 100%;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+                padding-bottom: 6px;
+            }
+
+            h1 {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            .btn, .btn-filter, .btn-cancel {
+                font-size: 0.95rem;
+                padding: 10px 12px;
             }
         }
     </style>
