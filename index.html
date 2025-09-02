@@ -524,7 +524,7 @@
             <div class="upload-section">
                 <h2>Upload File</h2>
                 <p>Select or drag and drop a Unreal log file</p>
-
+                <div id="selectedFileName" style="margin:8px 0;color:#1a2a6c;font-size:0.95rem;display:none;"></div>
                 <div class="drop-area" id="dropZone">
                     <i>📁</i>
                     <p>Drag and drop file here or click to select</p>
@@ -689,6 +689,7 @@
             // Get DOM elements
             const dropZone = document.getElementById('dropZone');
             const fileInput = document.getElementById('fileInput');
+            const selectedFileName = document.getElementById('selectedFileName');
             const executableResult = document.getElementById('executableResult');
             const versionResult = document.getElementById('versionResult');
             const compatibleVersionResult = document.getElementById('compatibleVersionResult');
@@ -849,6 +850,10 @@
                     alert('Please select a text file (.txt or .log)');
                     return;
                 }
+
+                // Display name of file selected
+                selectedFileName.textContent = 'Selected file: ' + file.name;
+                selectedFileName.style.display = 'block';
 
                 // Reset state
                 cancelRequested = false;
