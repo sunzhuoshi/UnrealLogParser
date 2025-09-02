@@ -444,6 +444,11 @@
                             <div class="info-title">Executable Name</div>
                             <div class="info-value" id="executableResult">Not parsed</div>
                         </div>
+
+                        <div class="basic-info-item">
+                            <div class="info-title">Build Configuration</div>
+                            <div class="info-value" id="buildConfigurationResult">Not parsed</div>
+                        </div>
                         
                         <div class="basic-info-item">
                             <div class="info-title">Unreal Engine Version</div>
@@ -965,6 +970,13 @@
                     executable = executableMatch[1].trim();
                 }
 
+                // Parse build configuration
+                let buildConfig = 'Not found';
+                const buildConfigMatch = text.match(/LogInit:\s*Build Configuration:\s*([^\n\r]+)/i);
+                if (buildConfigMatch && buildConfigMatch[1]) {
+                    buildConfig = buildConfigMatch[1].trim();
+                }
+
                 // Parse Unreal Engine version
                 let version = 'Not found';
                 const versionMatch = text.match(/Engine Version:\s*([\d.]+-\d+\+UE\d+)/i);
@@ -1053,6 +1065,7 @@
                 
                 // Update UI with parsed results
                 executableResult.textContent = executable;
+                buildConfigurationResult.textContent = buildConfig;
                 versionResult.textContent = version;
                 compatibleVersionResult.textContent = compatibleVersion;
                 osResult.textContent = os;
