@@ -601,6 +601,11 @@
                     <h3 class="section-title">RHI (Rendering Hardware Interface) Information</h3>
                     <div class="rhi-info">
                         <div class="rhi-info-item">
+                            <div class="info-title">RHI</div>
+                            <div class="info-value" id="rhiResult">Not parsed</div>
+                        </div>
+
+                        <div class="rhi-info-item">
                             <div class="info-title">Adapter Chosen</div>
                             <div class="info-value" id="adapterChosen">Not parsed</div>
                         </div>
@@ -696,6 +701,7 @@
             const osResult = document.getElementById('osResult');
             const cpuResult = document.getElementById('cpuResult');
             const gpuResult = document.getElementById('gpuResult');
+            const rhiResult = document.getElementById('rhiResult');
             const adapterChosenResult = document.getElementById('adapterChosen');
             const driverVersionResult = document.getElementById('driverVersionResult');
             const driverDateResult = document.getElementById('driverDateResult');
@@ -1137,6 +1143,13 @@
                     gpu = gpuMatch[1].trim();
                 }
 
+                // Parse RHI information - RHI
+                let rhi = 'Not found';
+                let rhiMatch = text.match(/LogRHI:\s*Loading RHI module\s*([^\n\r]+)/i);
+                if (rhiMatch && rhiMatch[1]) {
+                    rhi = rhiMatch[1].trim();
+                }
+
                 // Parse RHI information - Adapter Chosen
                 // Try UE5 log format first: "RHI Adapter Info:" followed by "Name:"
                 let adapterChosen = 'Not found';
@@ -1218,6 +1231,7 @@
                 osResult.textContent = os;
                 cpuResult.textContent = cpu;
                 gpuResult.textContent = gpu;
+                rhiResult.textContent = rhi;
                 adapterChosenResult.textContent = adapterChosen;
                 driverVersionResult.textContent = driverVersion;
                 driverDateResult.textContent = driverDate;
