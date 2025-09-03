@@ -601,8 +601,8 @@
                     <h3 class="section-title">RHI (Rendering Hardware Interface) Information</h3>
                     <div class="rhi-info">
                         <div class="rhi-info-item">
-                            <div class="info-title">Graphics Card Name</div>
-                            <div class="info-value" id="gpuNameResult">Not parsed</div>
+                            <div class="info-title">Adapter Chosen</div>
+                            <div class="info-value" id="adapterChosen">Not parsed</div>
                         </div>
 
                         <div class="rhi-info-item">
@@ -696,7 +696,7 @@
             const osResult = document.getElementById('osResult');
             const cpuResult = document.getElementById('cpuResult');
             const gpuResult = document.getElementById('gpuResult');
-            const gpuNameResult = document.getElementById('gpuNameResult');
+            const adapterChosenResult = document.getElementById('adapterChosen');
             const driverVersionResult = document.getElementById('driverVersionResult');
             const driverDateResult = document.getElementById('driverDateResult');
             const contentPreview = document.getElementById('contentPreview');
@@ -1137,19 +1137,19 @@
                     gpu = gpuMatch[1].trim();
                 }
 
-                // Parse RHI information - Graphics card name
+                // Parse RHI information - Adapter Chosen
                 // Try UE5 log format first: "RHI Adapter Info:" followed by "Name:"
-                let gpuName = 'Not found';
-                let gpuNameMatch = text.match(/RHI Adapter Info:\s*\n.*Name:\s*(.+)/m);
+                let adapterChosen = 'Not found';
+                let adapterChosenMatch = text.match(/RHI Adapter Info:\s*\n.*Name:\s*(.+)/m);
 
                 // If not found, try UE4 log format: "Adapter Name:"
-                if (!gpuNameMatch) {
-                    gpuNameMatch = text.match(/Adapter Name:\s*(.+)/);
+                if (!adapterChosenMatch) {
+                    adapterChosenMatch = text.match(/Adapter Name:\s*(.+)/);
                 }
 
-                // If a match is found, extract and trim the GPU name
-                if (gpuNameMatch && gpuNameMatch[1]) {
-                    gpuName = gpuNameMatch[1].trim();
+                // If a match is found, extract and trim the adapter name
+                if (adapterChosenMatch && adapterChosenMatch[1]) {
+                    adapterChosen = adapterChosenMatch[1].trim();
                 }
 
                 // Parse RHI information - Driver version
@@ -1218,7 +1218,7 @@
                 osResult.textContent = os;
                 cpuResult.textContent = cpu;
                 gpuResult.textContent = gpu;
-                gpuNameResult.textContent = gpuName;
+                adapterChosenResult.textContent = adapterChosen;
                 driverVersionResult.textContent = driverVersion;
                 driverDateResult.textContent = driverDate;
 
