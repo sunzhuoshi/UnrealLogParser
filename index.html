@@ -1186,27 +1186,27 @@
                 let xefgSDKVer = 'Not found';
 
                 // Parse XeSS plugin version name
-                const xessModuleMatch = text.match(/LogXeSSModule:.*version name: ([\d.]+)/);
-                if (xessModuleMatch) {
-                    xessPluginVerName = xessModuleMatch[1];
+                const xessPluginVerNameMatch = text.match(/XeSS plugin version:.*version name: ([\d.]+)/);
+                if (xessPluginVerNameMatch) {
+                    xessPluginVerName = xessPluginVerNameMatch[1];
                 }
 
                 // Parse XeSS SDK version
-                const xessRHIMatch = text.match(/LogXeSSRHI:.*XeSS library ([\d.]+)/);
-                if (xessRHIMatch) {
-                    xessSDKVer = xessRHIMatch[1];
+                const xessSDKVerMatch = text.match(/(?:XeSS SDK version:|:.*XeSS library)\s*([\d.]+)/);
+                if (xessSDKVerMatch) {
+                    xessSDKVer = xessSDKVerMatch[1];
                 }
 
                 // Parse XeLL SDK version
-                const xellModuleMatch = text.match(/LogXeLLModule:.*XeLL SDK ([\d.]+)/);
-                if (xellModuleMatch) {
-                    xellSDKVer = xellModuleMatch[1];
+                const xellSDKVerMatch = text.match(/(?:XeLL SDK version:|:.*XeLL SDK)\s*([\d.]+)/);
+                if (xellSDKVerMatch) {
+                    xellSDKVer = xellSDKVerMatch[1];
                 }
 
                 // Parse XeFG SDK version
-                const xefgModuleMatch = text.match(/LogXeFGRHIModule:.*XeFG SDK ([\d.]+)/);
-                if (xefgModuleMatch) {
-                    xefgSDKVer = xefgModuleMatch[1];
+                const xefgSDKVerMatch = text.match(/(?:XeFG SDK version:|:.*XeFG SDK)\s*([\d.]+)/);
+                if (xefgSDKVerMatch) {
+                    xefgSDKVer = xefgSDKVerMatch[1];
                 }
 
                 // Update UI with parsed results
